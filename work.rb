@@ -90,4 +90,41 @@ puts array
 array.pop(3)
 puts array
 # => MegaBus
-# => Greyhound 
+# => Greyhound
+
+# Hash: to_a
+# arguments: none
+# return: array -Converts a hash to an array. Keys & values all become elements.
+my_hash = {"one" => "1", "two" => "2"}
+my_hash = my_hash.to_a
+puts my_hash
+# => one
+# => 1
+# => two
+# => 2
+
+# Hash: has_key?
+# arguments: key
+# return: true or false
+# So, the question "has key?" means, "Does this hash have a key with this name?"
+your_hash = {"donald" => "president", "justin" => "prime minister"}
+puts your_hash.has_key?("donald")
+# => true
+puts your_hash.has_key?("the rock")
+# => false
+
+# Hash: has_value?
+# arguments: value
+# return: true or false
+# Works the same way as "has key" - just checks for a value.
+pet_hash = {"mavis" => "cat", "taffy" => "dog"}
+puts pet_hash.has_key?("taffy")
+# => true
+puts pet_hash.has_key?("garfield")
+# => false
+
+# Time: now
+
+# File: exist?
+
+# File: extname
