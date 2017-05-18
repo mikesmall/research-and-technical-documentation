@@ -124,7 +124,20 @@ puts pet_hash.has_key?("garfield")
 # => false
 
 # Time: now
+# arguments: none
+# return: the time.
+puts Time.now
+# => (it just gave me the time)
+# Remember to capitalize that T.
 
 # File: exist?
+# arguments: a file name
+# return: true or false
+puts File.exist?("autoexec.bat")
+# => false
 
 # File: extname
+# arguments: path
+# return: string
+puts File.extname("autoexec.bat")
+# => .bat
